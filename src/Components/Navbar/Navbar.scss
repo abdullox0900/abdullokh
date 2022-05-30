@@ -1,0 +1,21 @@
+.nav {
+    .nav__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav__item+.nav__item {
+        margin-left: 25px;
+    }
+
+    .nav__link {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        text-decoration: none;
+        color: #808080;
+    }
+}
