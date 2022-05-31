@@ -1,0 +1,85 @@
+.nav-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+
+    &__box {
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        width: 335px;
+        height: 315px;
+        padding: 25px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        list-style: none;
+    }
+
+    &__item+&__item {
+        margin-top: 25px;
+    }
+
+    &__link {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        color: #162232;
+        text-decoration: none;
+    }
+
+    &__line {
+        display: inline-block;
+        width: 275px;
+        height: 1px;
+        background-color: #cacaca;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-color: transparent;
+        background-image: url("../../Assets/Img/Icon/clos.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .nav-modal {
+        &__box {
+            width: 280px;
+            right: 15px;
+        }
+
+        &__line {
+            width: 230px;
+        }
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .nav-modal {
+        &__box {
+            width: 240px;
+        }
+    }
+}

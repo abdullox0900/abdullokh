@@ -18,4 +18,14 @@
         text-decoration: none;
         color: #808080;
     }
+
+    .nav--open {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
 }

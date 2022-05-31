@@ -15,4 +15,36 @@
         text-decoration: none;
         color: #162232;
     }
+
+    .header__burger-btn {
+        display: none;
+        width: 30px;
+        height: 28px;
+        border: none;
+        background-color: transparent;
+        background-image: url("../../Assets/Img/Icon/menu.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+// Responsiv Table //
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 25px 0px;
+        .header__burger-btn {
+            display: flex;
+        }
+
+        .nav--open {
+            display: flex;
+        }
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .header {
+        padding: 30px 0px;
+    }
 }
