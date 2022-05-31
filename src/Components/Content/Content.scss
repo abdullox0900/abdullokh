@@ -3,4 +3,72 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 90px;
+
+    &__img {
+        margin-bottom: 30px;
+        max-width: 200px;
+        height: 200px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    &__subtitle {
+        margin: 0;
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        color: #CACACA;
+    }
+
+    &__box {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item+&__item {
+        margin-left: 20px;
+    }
+
+    &__icon-link {
+        width: 35px;
+        height: 35px;
+    }
+
+    &__btn {
+        width: 120px;
+        font-weight: 600;
+        font-size: 18px !important;
+        line-height: 28px;
+        text-transform: none !important;
+        border-radius: 10px !important;
+        background-color: #1E90FF !important;
+    }
+
+    &__btn-cv {
+        width: 120px;
+        border-radius: 10px !important;
+    }
+
+    &__btn--link {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+       text-decoration: none;
+        color: #1E90FF;
+    }
 }

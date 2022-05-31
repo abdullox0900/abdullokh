@@ -5,7 +5,7 @@ import "../Footer/Footer.scss";
 function Footer() {
 
     var style = {
-        backgroundColor: "#FAFAFC",
+        // backgroundColor: "#FAFAFC",
         textAlign: "center",
         position: "fixed",
         left: "0",

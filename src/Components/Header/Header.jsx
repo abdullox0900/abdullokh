@@ -3,6 +3,7 @@ import "../Header/Header";
 import "../Header/Header.scss";
 import Navbar from "../Navbar/Navbar";
 import Container from "../Container/Container";
+import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
@@ -10,9 +11,9 @@ function Header() {
             <header className="header">
                 <Container>
                     <div className="header__container">
-                        <a href="#" className="header__logo-link">
+                        <NavLink to={"/"} className="header__logo-link">
                             Abdullokh
-                        </a>
+                        </NavLink>
                         <Navbar />
                     </div>
                 </Container>

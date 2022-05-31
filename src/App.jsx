@@ -1,14 +1,15 @@
 import './App.scss';
-import Header from './Components/Header/Header';
-import Main from './Components/Main/Main';
-import Footer from './Components/Footer/Footer';
+import Home from './Page/Home/Home';
+import About from './Page/About/About';
+import { Routes, Route, NavLink} from "react-router-dom";
 
 function App() {
     return(
         <>
-            <Header />
-            <Main/>
-            <Footer />
+            <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/About" element={<About />}/>
+            </Routes>
         </>
     )
 }
