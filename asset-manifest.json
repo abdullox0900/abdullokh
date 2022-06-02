@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/abdullokh/static/css/main.bc6e3229.css",
+    "main.js": "/abdullokh/static/js/main.9ae08d2f.js",
+    "static/media/abdullox.jpg": "/abdullokh/static/media/abdullox.3ab2bbe66513194dffb9.jpg",
+    "static/media/source-sans-pro-v21-latin-regular.woff": "/abdullokh/static/media/source-sans-pro-v21-latin-regular.6174cf1de0b4d2d2c6b1.woff",
+    "static/media/source-sans-pro-v21-latin-600.woff": "/abdullokh/static/media/source-sans-pro-v21-latin-600.d377fd9830de222773d7.woff",
+    "static/media/source-sans-pro-v21-latin-700.woff": "/abdullokh/static/media/source-sans-pro-v21-latin-700.a4921a50c1e7793c3447.woff",
+    "static/media/source-sans-pro-v21-latin-300.woff": "/abdullokh/static/media/source-sans-pro-v21-latin-300.bc06653689aefed356b9.woff",
+    "static/media/source-sans-pro-v21-latin-200.woff": "/abdullokh/static/media/source-sans-pro-v21-latin-200.151582dd8fe6416d54fb.woff",
+    "static/media/source-sans-pro-v21-latin-900.woff": "/abdullokh/static/media/source-sans-pro-v21-latin-900.e11fa6804dda4d71c72a.woff",
+    "static/media/source-sans-pro-v21-latin-600.woff2": "/abdullokh/static/media/source-sans-pro-v21-latin-600.ba0db8c652c563d236e1.woff2",
+    "static/media/source-sans-pro-v21-latin-regular.woff2": "/abdullokh/static/media/source-sans-pro-v21-latin-regular.c0d191aa7fb798623030.woff2",
+    "static/media/source-sans-pro-v21-latin-300.woff2": "/abdullokh/static/media/source-sans-pro-v21-latin-300.44dcc065167aa00d6483.woff2",
+    "static/media/source-sans-pro-v21-latin-700.woff2": "/abdullokh/static/media/source-sans-pro-v21-latin-700.a10519031679e736153a.woff2",
+    "static/media/source-sans-pro-v21-latin-200.woff2": "/abdullokh/static/media/source-sans-pro-v21-latin-200.c320468f050ecaa1a470.woff2",
+    "static/media/source-sans-pro-v21-latin-900.woff2": "/abdullokh/static/media/source-sans-pro-v21-latin-900.086408af8f268379634c.woff2",
+    "static/media/GitHub.svg": "/abdullokh/static/media/GitHub.74c081a0f1f32f73aa91a79f2fabab50.svg",
+    "static/media/Telegram.svg": "/abdullokh/static/media/Telegram.9925925e0f955b23106f84311f593d90.svg",
+    "static/media/YouTube.svg": "/abdullokh/static/media/YouTube.70a1a352651ab622374cd98aab895873.svg",
+    "static/media/LinkedIn.svg": "/abdullokh/static/media/LinkedIn.aa3673acdc1a7323f8dfe2eded315f8a.svg",
+    "index.html": "/abdullokh/index.html",
+    "static/media/menu.svg": "/abdullokh/static/media/menu.aa41c7bdbd11dc4551c1.svg",
+    "static/media/clos.svg": "/abdullokh/static/media/clos.4ce585d007e04e059061.svg",
+    "main.bc6e3229.css.map": "/abdullokh/static/css/main.bc6e3229.css.map",
+    "main.9ae08d2f.js.map": "/abdullokh/static/js/main.9ae08d2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc6e3229.css",
+    "static/js/main.9ae08d2f.js"
+  ]
+}
