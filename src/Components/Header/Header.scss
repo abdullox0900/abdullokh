@@ -2,21 +2,30 @@
     padding: 20px 0px;
     // border-bottom: 1px #cacaca solid;
 
-    .header__container {
+    &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .header__logo-link {
+    &__logo-link {
+        position: relative;
         font-weight: 700;
         font-size: 28px;
         line-height: 35px;
         text-decoration: none;
         color: #162232;
+        transition: ease 0.5s;
     }
 
-    .header__burger-btn {
+    &__logo-a {
+        position: relative;
+        transition: ease-in 0.5s;
+        transform: rotate(0deg);
+        z-index: 10;
+    }
+
+    &__burger-btn {
         display: none;
         width: 30px;
         height: 28px;
@@ -26,6 +35,19 @@
         background-repeat: no-repeat;
         background-size: contain;
     }
+
+    
+    &__logo-link:hover &__logo-a {
+        color: dodgerblue;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .header {
+        &__logo-link {
+            color: #fff;
+        }
+    }
 }
 
 // Responsiv Table //
@@ -33,7 +55,7 @@
 @media only screen and (max-width: 768px) {
     .header {
         padding: 25px 0px;
-        .header__burger-btn {
+        &__burger-btn {
             display: flex;
         }
 

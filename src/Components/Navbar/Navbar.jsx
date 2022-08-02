@@ -11,7 +11,7 @@ function Navbar() {
                         <NavLink to={"/about"} className="nav__link">About</NavLink>
                     </li>
                     <li className="nav__item">
-                        <a href="3" className="nav__link">Project</a>
+                        <NavLink to={"/Project"} className="nav__link">Project</NavLink>
                     </li>
                     <li className="nav__item">
                         <a href="3" className="nav__link">Channel</a>

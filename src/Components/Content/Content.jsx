@@ -10,6 +10,7 @@ import Button from '@mui/material/Button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { NavLink } from "react-router-dom";
+import myCv from "../../Documents/cv.pdf";
 
 function Content() {
 
@@ -32,27 +33,33 @@ function Content() {
                     data-aos-duration="2000">
                     Front-End Engineer
                 </p>
+
+                <div className="oval"></div>
+
+                <div className="oval-2"></div>
+
                 <div className="content__box" data-aos="fade-up"
                     data-aos-duration="2000">
                     <ul className="content__list">
                         <li className="content__item">
                             <a href="https://github.com/abdullox0900" target={"_blank"} className="content__icon-link">
-                                <img className="" src={GitHubIcon} alt="github" />
+                                <ion-icon name="logo-github"></ion-icon>
+                                {/* <img className="" src={GitHubIcon} alt="github" /> */}
                             </a>
                         </li>
-                        <li className="content__item">
+                        {/* <li className="content__item">
                             <a href="#" className="content__icon-link">
                                 <img className="" src={TelegramIcon} alt="telegram" />
                             </a>
-                        </li>
+                        </li> */}
                         <li className="content__item">
                             <a href="https://www.linkedin.com/feed/" target={"_blank"} className="content__icon-link">
-                                <img className="" src={LinkedinIcon} alt="" />
+                                <ion-icon name="logo-linkedin"></ion-icon>
                             </a>
                         </li>
                         <li className="content__item">
                             <a href="https://www.youtube.com/channel/UCh4_4klA2PtblluTPQhhT1A" target={"_blank"} className="content__icon-link">
-                                <img className="" src={YouTubeIcon} alt="" />
+                                <ion-icon name="logo-youtube"></ion-icon>
                             </a>
                         </li>
                     </ul>
@@ -61,11 +68,11 @@ function Content() {
                     data-aos-easing="ease-in-back"
                     data-aos-delay="700"
                     data-aos-offset="0">
-                    <NavLink to={"/About"}>
+                    <NavLink to={"/About"} className="content__link-btn">
                         <Button className="content__btn" variant="contained">About Me</Button>
                     </NavLink>
                     <Button className="content__btn-cv" variant="outlined">
-                        <a href="#" className="content__btn--link">Cv</a>
+                        <a href={myCv} className="content__btn--link" download={"cv"}>Cv</a>
                     </Button>
                 </Stack>
             </div>

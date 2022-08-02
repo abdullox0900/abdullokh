@@ -18,7 +18,8 @@ function Header() {
                 <Container>
                     <div className="header__container">
                         <NavLink to={"/"} className="header__logo-link">
-                            Abdullokh
+                            <span className="header__logo-a">A</span>
+                            bdullokh
                         </NavLink>
                         <Navbar />
                         <button className="header__burger-btn" onClick={() => {

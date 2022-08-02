@@ -3,12 +3,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    overflow: visible;
     margin-top: 90px;
 
     &__img {
         margin-bottom: 30px;
         max-width: 200px;
         height: 200px;
+        border-radius: 55%;
     }
 
     &__title {
@@ -47,6 +50,11 @@
     &__icon-link {
         width: 35px;
         height: 35px;
+
+        ion-icon {
+            font-size: 35px;
+            color: #000;
+        }
     }
 
     &__btn {
@@ -59,6 +67,10 @@
         background-color: #1E90FF !important;
     }
 
+    &__link-btn {
+        text-decoration: none !important;
+    }
+
     &__btn-cv {
         width: 120px;
         border-radius: 10px !important;
@@ -68,7 +80,111 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 28px;
-       text-decoration: none;
+        text-decoration: none;
         color: #1E90FF;
+    }
+}
+
+/* хром, сафари */
+body::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+body { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+body { overflow: -moz-scrollbars-none; }
+
+@media (prefers-color-scheme: dark) {
+    .content {
+        &__title {
+            color: #fff;
+        }
+
+        &__subtitle {
+            color: #c1c1c1;
+        }
+
+        &__icon-link {
+            ion-icon {
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+.oval {
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(closest-side, #2dd4bf, rgba(233, 168, 2, 0));
+    animation: traverse-up-left 10s ease-in-out infinite alternate;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.oval-2 {
+    position: absolute;
+    top: 15px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(closest-side, #6366f1, rgba(233, 168, 2, 0));
+    animation: traverse-up-right 12s ease-in-out infinite alternate;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+@keyframes traverse-up-left {
+    100% {
+        transform: translateY(-200px) translateX(-350px) rotate(180deg);
+    }
+}
+
+@keyframes traverse-up-right {
+    100% {
+        transform: translateY(-300px) translateX(300px) rotate(1turn);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .oval {
+        left: 100px;
+        top: 20px;
+        width: 500px;
+        height: 500px;
+    }
+
+    .oval-2 {
+        top: 15px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .content {
+        &__title {
+            font-size: 28px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 350px) {
+    .content {
+        &__title {
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        &__subtitle {
+            font-size: 22px;
+        }
     }
 }
